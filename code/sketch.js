@@ -3,7 +3,7 @@
 // Evan MacHale - N00150552
 // Interactive Graphics Module Year 3
 // The Nature of Code by Daniel Shiffman
-// Introduction // I.3 Probability and Non-Uniform Distributions // Part a.
+// Introduction // I.3 Probability and Non-Uniform Distributions // Part b.
 // http://natureofcode.com/book/introduction/
 // ------------------------------------------------- //
 function Walker() {
@@ -16,49 +16,37 @@ function Walker() {
     point(this.x,this.y);
   }
   this.walk = function() {
-    // Manually set probability
-    var probArray = [];
-    probArray[0] = 1;
-    probArray[1] = 1;
-    probArray[2] = 2;
-    probArray[3] = 3;
-    probArray[4] = 3;
-    // 40% chance r = 1 or 3
-    // 20% chance r = 2
-    var index = floor(random(probArray.length));
-    var r = probArray[index];
-    // More likely to be x++ & y++
-    // i.e, diagonal bottom-right
-    if (r === 1) {
+    var r = random(1);
+    // ~40% chance of moving right
+    if (r < 0.4) {
       this.x++;
     }
-    else if (r === 2) {
+    // ~20%
+    else if (r < 0.6) {
       this.x--;
     }
-    else if (r === 3) {
+    else if (r < 0.8) {
       this.y++;
     }
     else {
       this.y--;
     }
-
-    // for(var x = 0; x < probArray.length; x++) {
-    //     console.log(r);
-    // }
-
+    // So point won't go off canvas
     this.x = constrain(this.x,0,width);
     this.y = constrain(this.y,0,height);
   }
 }
-
+// Declare object
 var myWalker;
 
 function setup() {
   createCanvas(500,500);
+  // Initialise class object
   myWalker = new Walker();
 }
 
 function draw() {
+  // Call functionality on object
   myWalker.display();
   myWalker.walk();
 }
