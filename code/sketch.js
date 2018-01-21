@@ -3,11 +3,11 @@
 // Evan MacHale - N00150552
 // Interactive Graphics Module Year 3
 // The Nature of Code by Daniel Shiffman
-// Introduction // I.1-2 Random Walker // Part a.
+// Introduction // I.1-2 Random Walker // Part b.
 // http://natureofcode.com/book/introduction/
 // ------------------------------------------------- //
 // Class
-function walker() {
+function Walker() {
   // Data
   this.x = width/2;
   this.y = height/2;
@@ -17,39 +17,26 @@ function walker() {
     point(this.x,this.y);
   }
   this.walk = function() {
-    // Number between 0 & 4 (max 3.999)
-    // 'floor' knocks off decimals
-    // Four outcomes:
-    // 0, 1, 2, or 3
-    // https://p5js.org/reference/#/p5/floor
-    var direction = floor(random(4));
-    if(direction === 0) {
-      this.x++;
-    }
-    else if (direction === 1) {
-      this.x--;
-    }
-    else if (direction === 2) {
-      this.y++;
-    }
-    else {
-      this.y--;
-    }
-    // p5 function 'constrain'
-    // Limit x position
-    // So it won't go off screen
-    // https://p5js.org/reference/#/p5/constrain
+    // 3 outcomes: -1,0 & 1
+    xWalk = floor(random(-1,2));
+    yWalk = floor(random(-1,2));
+    // Combined we get 9 outcomes
+    // +1 xPos & +1 yPos produces diagonal
+    this.x = this.x + xWalk;
+    this.y = this.y + yWalk;
+    // Doesn't continue off screen
     this.x = constrain(this.x,0,width);
     this.y = constrain(this.y,0,height);
   }
 }
-// Declare class object
+// Declare object
 var myWalker;
 
 function setup() {
   createCanvas(500,500);
-  //Initialise new class object
-  myWalker = new walker();
+  background('lime');
+  // Initialise class objcet
+  myWalker = new Walker();
 }
 // Call functionality on object
 function draw() {
