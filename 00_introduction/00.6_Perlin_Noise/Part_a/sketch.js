@@ -19,11 +19,14 @@ function Walker() {
     ellipse(this.x,height/2,50,50);
   }
   this.walk = function() {
+    // 'Perlin Noise' retunrs a value related to the one passed in
     // 'noise' function always returns between 1 and 0
     // Think of one-dimensional Perlin noise as a linear sequence of values over time
     // In this case 'xOff' is our time
     // 'map' used to get our current value (xOff) within a range (1,0)
     // Then return a new value from a new given range
+    // Think of 'randomGaussian'
+    // 'expand + shift'
     // 'new value = map(value, current min, current max, new min, new max)'
     this.x = map(noise(this.xOff),0,1,0,width);
     // console.log(this.x);
