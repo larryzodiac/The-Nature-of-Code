@@ -33,7 +33,7 @@ var Walker = function() {
   // Simple, draws ellipse
   this.display = function() {
     noStroke();
-    fill(255,200,0);
+    fill(200,70,0);
     ellipse(this.location.x, this.location.y, 40, 40);
   }
   // Checks if ellispe goes beyond window boundaries
@@ -52,12 +52,12 @@ var myWalker
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
+  background(0);
   // Create new object
   myWalker = new Walker();
 }
 
 function draw() {
-  background(0);
   fill(0,15);
   rect(0,0,width,height);
   // Call functionality

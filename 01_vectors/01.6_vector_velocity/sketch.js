@@ -41,12 +41,12 @@ var myWalker
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
+  background(0);
   // Create new object
   myWalker = new Walker();
 }
 
 function draw() {
-  background(0);
   fill(0,15);
   rect(0,0,width,height);
   // Call functionality

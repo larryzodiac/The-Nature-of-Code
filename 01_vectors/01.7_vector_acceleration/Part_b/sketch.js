@@ -49,6 +49,7 @@ var myWalker
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
+  background(0);
   // Create new object
   myWalker = new Walker();
 }

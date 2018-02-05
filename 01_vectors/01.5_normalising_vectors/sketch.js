@@ -9,10 +9,10 @@
 // ------------------------------------------------- //
 function setup() {
   createCanvas(windowWidth,windowHeight);
+  background(0);
 }
 
 function draw() {
-  background(0);
   noStroke();
   fill(0,15);
   rect(0,0,width,height);
