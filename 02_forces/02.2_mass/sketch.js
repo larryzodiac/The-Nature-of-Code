@@ -3,7 +3,7 @@
 // Evan MacHale - N00150552
 // Interactive Graphics Module Year 3
 // The Nature of Code by Daniel Shiffman
-// Forces // 2.1 Dealing with Mass
+// Forces // 2.2 Adding Mass
 // Force = mass * acceleration
 // http://natureofcode.com/book/chapter-2-forces/
 // ------------------------------------------------- //
