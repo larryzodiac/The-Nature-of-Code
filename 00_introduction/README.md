@@ -5,7 +5,7 @@ This folder covers randomness, Perlin Noise and probability
 
 ## Exercises in this folder
 0. [Recap of Classes and objects](00.0_Recap_Classes_&_Objects)
-1. [Random Walker :](00.1_Random_Walker)
+1. [Random Walker](00.1_Random_Walker)
    - [Four Outcomes](00.1_Random_Walker/Part_a)
    - [Nine Outcomes](00.1_Random_Walker/Part_b)
 2. [Random Number Distribution](00.2_Random_Number_Distribution)
