@@ -30,7 +30,7 @@ var Mover = function () {
     push();
     translate(this.position.x, this.position.y);
     rotate(angle);
-    triangle(30, 75, 58, 20, 86, 75);
+    rect(0,0,60,20);
     pop();
   }
   this.checkEdges = function () {
