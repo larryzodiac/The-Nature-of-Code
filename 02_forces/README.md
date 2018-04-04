@@ -12,6 +12,8 @@ A force is a vector that causes an object with mass to accelerate.
 2. [Mass](02.2_mass)
 3. [Gravity](02.3_gravity)
 4. [Friction](02.4_friction)
+5. [Liquid](02.5_drag)
+6. [Wind Chimes](02.ex_wind_chimes)
 
 ## Newton's First Law
 ```
