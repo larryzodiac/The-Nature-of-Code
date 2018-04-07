@@ -5,6 +5,7 @@ Year 3 Interactive Graphics Module w/ p5.js
 0. [Introduction - Randomness, Perlin Noise, Probability](00_introduction)
 1. [Vectors and Motion](01_vectors)
 2. [Forces](02_forces)
+3. [Oscillation](03_oscillation)
 
 ## Using Git
 After having set up your account and creating a new repository, on your machine's local drive, create a folder of the same name as your new repository.
