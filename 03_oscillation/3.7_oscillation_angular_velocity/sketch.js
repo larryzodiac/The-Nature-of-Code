@@ -28,12 +28,11 @@ var Mover = function() {
     line(0,0,x,y);
     ellipse(x,y,16,16);
     pop();
-
   }
 }
 
 // ------------------------------------------------- //
-var movers = []
+var movers = [];
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
