@@ -1,6 +1,8 @@
 # The Nature of Code by Daniel Shiffman
 Year 3 Interactive Graphics Module w/ p5.js
 
+See [Coding Challenge CA2](https://larryzodiac.github.io/The-Nature-of-Code/codingChallenge/gas_giant_rings/) for GitHub pages hosting.
+
 ## Chapters Covered in this Respository 
 0. [Introduction - Randomness, Perlin Noise, Probability](00_introduction)
 1. [Vectors and Motion](01_vectors)
